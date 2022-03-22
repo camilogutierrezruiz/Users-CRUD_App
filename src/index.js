@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import UserCRUDApp from './UserCRUDApp'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <UserCRUDApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
