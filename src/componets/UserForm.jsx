@@ -103,7 +103,7 @@ const UserForm = ({
           />
         </section>
         <section className='input__wrapper password'>
-          <input className='userform__input'
+          <input className='userform__input password'
             type={showPass ? 'text' : 'password'}
             id='form__user-pass'
             placeholder='password'
@@ -126,12 +126,14 @@ const UserForm = ({
           />
         </section>
       </section>
-      <section>
+      <section className='formbuttons__wrapper'>
         <GlobalButtons
+          ButtonClassName={'form__button--footer'}
           ButtonType={'submit'}
           ButtonTextContent={userSelected ? 'Update' : 'Create'}
         />
         {userSelected && <GlobalButtons
+          ButtonClassName={'form__button--footer'}
           ButtonTextContent={'Cancel'}
           ButtonOnClickAction={() => cancelPatch()}
         />}
