@@ -78,33 +78,16 @@ body::-webkit-scrollbar-thumb {
 
 /* *------------------------------- */
 
-.userform {
-  width: 500px;
-  height: auto;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 5px 20px #0007;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 10;
-  overflow: hidden;
-}
-
 .userform__wrapper.visible {
   width: 100%;
-  height: 100%;
-  padding: 200px 0 0 0;
+  height: 100vh;
   background-color: #0005;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   visibility: visible;
 }
 
@@ -122,6 +105,23 @@ body::-webkit-scrollbar-thumb {
 .userform__button--wrapper.hidden {
   display: none;
 }
+
+.userform {
+  width: 500px;
+  height: auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px #0007;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
 
 .button__closeform {
   width: auto;
